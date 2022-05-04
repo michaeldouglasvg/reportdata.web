@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- main styles -->
+ <link rel="stylesheet" href="styles/index.css">
+ <link rel="stylesheet" href="styles/import.css">
+ <!-- font-awesome links -->
+ <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+ <title>GtechAmour|| Index page</title>
+ <!-- Browser image icon -->
+ <link rel="icon" href="images/logo/mylogo.png">
+ <!-- gooogle fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- ===== Main Display area/ Wrapper -->
+ <div class="wrapper">
+  <!-- ====== Home page ===== -->
+  <div class="home-container">
+   <div class="home-cover">
+    <div class="home-content">
+
+     <div class="header">
+      <div class="header__logo">
+       <img src="images/logo/mylogo.png" alt="My-Logo" height="40px" class="header__logo-img">
+      </div>
+      <div class="header__events">
+        <p>Happy Birthday { of 23 }</p>
+      </div>
+      <div class="header__links-section">
+       <ul class="header__links">
+        <li>
+         <a href="Home">Home</a>
+        </li>
+        <li>
+         <a href="Home">About</a>
+        </li>
+        <li>
+         <a href="Home">Skills</a>
+        </li>
+        <li>
+         <a href="Home">Projects</a>
+        </li>
+        <li>
+         <a href="Home">Services</a>
+        </li>
+        <li>
+         <a href="Home">Testimonials</a>
+        </li>
+        <li>
+         <a href="Home">Contacts</a>
+        </li>
+       </ul>
+      </div>
+
+      <div class="header__darkmode">
+       <div class="darktheme"><i class="fa fa-moon-o"></i></div>
+       <div class="settings">
+        <i class="fa fa-cog"></i>
+       </div>
+      </div>
+     </div>
+     <!-- ===== home page display ===== -->
+     <div class="display">
+
+      <div class="display__left">
+       <div class="display__title">
+        <span>Hi,</span> <p>I am</p>
+       </div>
+       <div class="display__name">
+        <h1>Michael Douglas</h1>
+       </div>
+       <div class="display__typing">
+        <span id="dynamictype" class="dynamictype"></span>
+       </div>
+       <div class="display__text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugiat alias ipsa asperiores libero maiores illum ipsum unde nihil </p>
+       </div>
+       <div class="display__btns">
+        <button>
+         <i class="fa fa-download"></i>
+         <a href="">Download CV</a>
+        </button>
+        <button>
+         <i class="fa fa-user"></i>
+         <a href="">Hire Me</a>
+        </button>
+       </div>
+      </div>
+
+      <div class="display__right">
+       <div class="display__svg-container">
+        <div class="display__img-cotainer">
+         <img src="images/mainprofile.jpg" alt="profileImage" height="100px">
+        </div>
+       </div>
+      </div>
+     </div>
+
+    </div>
+   </div>
+  </div>
+  <!-- end of home page -->
+  <!-- ===== Languages/ Skills section ===== -->
+  <div class="skills-container"></div>
+  <!-- end of skills page -->
+  <!-- ===== Project/My work page ===== -->
+  <div class="project-container"></div>
+  <!-- end of project page -->
+  <!-- ===== My Services page ===== -->
+  <div class="service-container"></div>
+  <!-- end of service page -->
+  <!-- ===== Contact page ===== -->
+  <div class="contacts-container"></div>
+  <!-- end of contact page -->
+ </div>
+ <!-- end of wrapper container -->
+
+
+<!-- ===== small screen navigation ====== -->
+<div class="dis" id="smallscreenmanu">
+  <div class="boxes">
+    <div class="minicard">
+     <i class="fa fa-home"></i>
+    <span>Home</span>
+    </div>
+    <div class="minicard">
+     <i class="fa fa-info"></i>
+    <span>About</span>
+    </div>
+    <div class="minicard">
+     <i class="fa fa-code"></i>
+    <span>Skills</span>
+    </div>
+    <div class="minicard">
+     <i class="fa fa-code-fork"></i>
+    <span>Projects</span>
+    </div>
+    <div class="minicard">
+      <i class="fa fa-google-plus-circle"></i>
+    <span>Media</span>
+    </div>
+    <div class="minicard">
+     <i class="fa fa-comment"></i>
+    <span>Contacts</span>
+    </div>
+  </div>
+  <div class="close"><i class="fa fa-chevron-down"></i></div>
+</div>
+<div class="bottom">
+ <div class="name"><p>MD</p></div>
+ <div class="darkmode">
+  <i class="fa fa-moon-o"></i>
+  <div class="navigator"><i class="fa fa-home"></i></div>
+ </div>
+</div>
+<!-- end of menu -->
+
+
+
+
+
+ <script src="JavaScript/index.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+</body>
+
+<script>
+  var typed = new Typed('.dynamictype', {
+	strings: ['Frontend Develper', 'Backend Developer', 'UI/UX Designer', 'AI Programmer'],
+	typeSpeed: 40,
+	backSpeed: 10,
+	loop: true,
+	loopCount: Infinity,
+	startDelay: 200,
+	
+});
+</script>
+</html>
