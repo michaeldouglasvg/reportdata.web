@@ -1167,6 +1167,12 @@
   padding: .1rem 1rem;
 }
 
+@media only screen and (min-width: 426px) {
+  .bottom {
+    display: none;
+  }
+}
+
 .bottom .name {
   width: 40px;
   height: 40px;
@@ -1224,6 +1230,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (min-width: 426px) {
+  #smallscreenmanu {
+    right: 2rem;
+  }
 }
 
 #smallscreenmanu .boxes {
