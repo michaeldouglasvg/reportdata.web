@@ -1,3 +1,226 @@
+.skills-container {
+  width: 100%;
+  margin: 1rem 0rem;
+}
+
+@media only screen and (min-width: 769px) {
+  .skills-container {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+.skills-container .cover-about {
+  width: 96%;
+  margin: 1rem auto;
+}
+
+@media only screen and (min-width: 426px) {
+  .skills-container .cover-about {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .skills-container .cover-about {
+    width: 80%;
+    height: 80vh;
+  }
+}
+
+.skills-container .cover-about .title {
+  width: 90%;
+  margin: .1rem auto;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+@media only screen and (min-width: 769px) {
+  .skills-container .cover-about .title {
+    width: 60%;
+    margin: 1rem auto;
+  }
+}
+
+.skills-container .cover-about .title .maintitle {
+  font-size: 1.6rem;
+  color: orangered;
+  padding: .4rem 1rem;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 769px) {
+  .skills-container .cover-about .title .maintitle {
+    font-size: 2rem;
+  }
+}
+
+.skills-container .cover-about .about-display {
+  width: 96%;
+  margin: .6rem auto;
+}
+
+@media only screen and (min-width: 426px) {
+  .skills-container .cover-about .about-display {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(18rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+}
+
+.skills-container .cover-about .about-display .aboutleft {
+  width: 100%;
+}
+
+@media only screen and (min-width: 426px) {
+  .skills-container .cover-about .about-display .aboutleft {
+    width: 70%;
+  }
+}
+
+.skills-container .cover-about .about-display .aboutleft__top {
+  width: 100%;
+  padding: .1rem .2rem;
+}
+
+.skills-container .cover-about .about-display .aboutleft__top p {
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.skills-container .cover-about .about-display .aboutleft__imageslide {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 426px) {
+  .skills-container .cover-about .about-display .aboutleft__imageslide {
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .skills-container .cover-about .about-display .aboutleft__imageslide {
+    height: 400px;
+  }
+}
+
+.skills-container .cover-about .about-display .aboutleft__imageslide img {
+  width: 100%;
+  height: 100%;
+}
+
+.skills-container .cover-about .about-display .aboutleft__sociolinks {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.skills-container .cover-about .about-display .aboutleft__sociolinks .links {
+  width: inherit;
+}
+
+.skills-container .cover-about .about-display .aboutleft__sociolinks .links i {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.skills-container .cover-about .about-display .aboutright {
+  width: 100%;
+}
+
+@media only screen and (min-width: 426px) {
+  .skills-container .cover-about .about-display .aboutright {
+    margin-left: -60px;
+    width: 110%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .skills-container .cover-about .about-display .aboutright {
+    margin-left: -100px;
+  }
+}
+
+.skills-container .cover-about .about-display .aboutright__sm-title {
+  width: 100%;
+  padding: 1rem .4rem;
+}
+
+.skills-container .cover-about .about-display .aboutright__sm-title p {
+  font-size: 1.2rem;
+  color: purple;
+  padding: .2rem 0rem;
+  font-weight: 600;
+}
+
+.skills-container .cover-about .about-display .aboutright__workpage {
+  width: 100%;
+  margin-top: .2rem;
+}
+
+.skills-container .cover-about .about-display .aboutright__workpage .article {
+  width: inherit;
+}
+
+.skills-container .cover-about .about-display .aboutright__workpage .article__buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: auto;
+  background: whitesmoke;
+  padding: .4rem .1rem;
+}
+
+.skills-container .cover-about .about-display .aboutright__workpage .article__buttons::-webkit-scrollbar {
+  display: none;
+}
+
+.skills-container .cover-about .about-display .aboutright__workpage .article__buttons .btn {
+  cursor: pointer;
+  margin-left: .6rem;
+  margin-right: .6rem;
+  outline: none;
+  border: none;
+  padding: .5rem .6rem;
+  border-radius: 3px;
+  outline: 1px solid #c3c3c3;
+}
+
+.skills-container .cover-about .about-display .aboutright__workpage .article__buttons .active {
+  background: white;
+}
+
+.skills-container .cover-about .about-display .aboutright__workpage .article__containerdisplay {
+  width: 100%;
+  margin-top: 1rem;
+  padding: .4rem 0rem;
+}
+
+.skills-container .cover-about .about-display .aboutright__workpage .article__display-sec {
+  width: inherit;
+  display: none;
+}
+
+.skills-container .cover-about .about-display .aboutright__workpage .article__display-sec .heading {
+  font-weight: 600;
+  padding-bottom: .4rem;
+}
+
+.skills-container .cover-about .about-display .aboutright__workpage .article .active {
+  display: block;
+}
+
 .bottom {
   width: 100%;
   height: 40px;
