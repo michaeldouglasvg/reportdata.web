@@ -1,0 +1,69 @@
+.service-container{
+ width: 100%;
+ padding: 1rem 0rem;
+  @media only screen and (min-width: 769px){
+       height: 100vh;
+  }
+
+  .cover-services{
+   width: 96%;
+   padding: 1rem .4rem;
+   @media only screen and (min-width: 426px){
+    width: 90%;
+    margin: .2rem auto;
+   }
+   @media only screen and (min-width: 769px){
+       width: 80%;
+       margin: 1rem auto;
+       padding: 1rem 2rem;
+   }
+
+   .title{
+    width: 100%;
+    margin: .1rem auto;
+    .maintitle{
+     font-size: 1.6rem;
+     color: orangered;
+     text-align: center;
+     padding: .2rem .1rem;
+     @media only screen and (min-width: 426px){
+      font-size: 2rem;
+     }
+    }
+   }
+
+   .covercard{
+    margin: 1rem auto;
+    width: 100%;
+    padding: .2rem .2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+
+    .cardcontent{
+     width: 280px;
+     height: 260px;
+     margin: .6rem auto;
+     padding: .4rem .2rem;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+
+     i{
+      font-size: 5rem;
+      font-weight: 600;
+     }
+
+     &__text{
+      font-size: .8rem;
+      text-align: center;
+      line-height: 2rem;
+     }
+     .email{
+      font-size: .9rem;
+      font-weight: 600;
+     }
+    }
+   }
+  }
+}

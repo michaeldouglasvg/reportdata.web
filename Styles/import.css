@@ -476,7 +476,8 @@
 }
 
 .project-container .cover-projects .projectcontainer .prototype .prototypeimage {
-  width: 100%;
+  width: 96%;
+  margin: .1rem auto;
 }
 
 .project-container .cover-projects .projectcontainer .prototype .prototypeimage .contents {
@@ -507,6 +508,7 @@
   top: 0;
   padding: 1rem 1rem;
   background: rgba(0, 0, 0, 0.6);
+  margin: .1rem auto;
 }
 
 .project-container .cover-projects .projectcontainer .prototype .prototypeimage .contents .category h1 {
@@ -521,5 +523,100 @@
   color: white;
   font-size: 1rem;
   word-spacing: .2rem;
+}
+
+.service-container {
+  width: 100%;
+  padding: 1rem 0rem;
+}
+
+@media only screen and (min-width: 769px) {
+  .service-container {
+    height: 100vh;
+  }
+}
+
+.service-container .cover-services {
+  width: 96%;
+  padding: 1rem .4rem;
+}
+
+@media only screen and (min-width: 426px) {
+  .service-container .cover-services {
+    width: 90%;
+    margin: .2rem auto;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .service-container .cover-services {
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+  }
+}
+
+.service-container .cover-services .title {
+  width: 100%;
+  margin: .1rem auto;
+}
+
+.service-container .cover-services .title .maintitle {
+  font-size: 1.6rem;
+  color: orangered;
+  text-align: center;
+  padding: .2rem .1rem;
+}
+
+@media only screen and (min-width: 426px) {
+  .service-container .cover-services .title .maintitle {
+    font-size: 2rem;
+  }
+}
+
+.service-container .cover-services .covercard {
+  margin: 1rem auto;
+  width: 100%;
+  padding: .2rem .2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.service-container .cover-services .covercard .cardcontent {
+  width: 280px;
+  height: 260px;
+  margin: .6rem auto;
+  padding: .4rem .2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.service-container .cover-services .covercard .cardcontent i {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.service-container .cover-services .covercard .cardcontent__text {
+  font-size: .8rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.service-container .cover-services .covercard .cardcontent .email {
+  font-size: .9rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=import.css.map */

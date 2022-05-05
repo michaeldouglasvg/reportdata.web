@@ -198,7 +198,8 @@
      }
 
      .prototypeimage{
-      width: 100%;
+      width: 96%;
+      margin: .1rem auto;
 
       .contents{
        width: 280px;
@@ -222,6 +223,7 @@
         top: 0;
         padding: 1rem 1rem;
         background: rgba(0, 0, 0, .6);
+        margin: .1rem auto;
 
         h1{
          font-size: 1.2rem;
