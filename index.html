@@ -16,6 +16,10 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+ <!-- swipper js -->
+ <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
 </head>
 <body>
 <!-- ===== Main Display area/ Wrapper -->
@@ -136,10 +140,12 @@
           <div class="aboutright__workpage">
             <article class="article">
               <div class="article__buttons">
-                <button class="btn active" data-about="skills">skills</button>
-                <button class="btn" data-about="language">Languages</button>
-                <button class="btn" data-about="projects">Projects</button>
-                <button class="btn" data-about="awards">Awards</button>
+                <div class="swiperbtns">
+                  <button class="btn active" data-about="skills">skills</button>
+                  <button class="btn" data-about="language">Languages</button>
+                  <button class="btn" data-about="projects">Projects</button>
+                  <button class="btn" data-about="awards">Awards</button>
+                </div>
               </div>
               
               <div class="article__containerdisplay">
@@ -246,12 +252,13 @@
                 </div>
 
               </div>
+              
             </div>
           </div>
         </div>
 
         <div class="prototype">
-          <div class="prototype__protitle"><h1>Current under implimentation</h1></div>
+          <div class="prototype__protitle"><h1>Current Project</h1></div>
           <div class="prototypeimage">
             <div class="contents">
               <img src="images/slider/about.jpg" alt="underdeveloplment" height="100px">
@@ -455,6 +462,7 @@
 
 
  <script src="JavaScript/index.js"></script>
+ <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
@@ -469,6 +477,20 @@
 	loopCount: Infinity,
 	startDelay: 200,
 	
-});
+  });
+
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 </script>
 </html>

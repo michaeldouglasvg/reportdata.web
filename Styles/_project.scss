@@ -1,0 +1,244 @@
+.project-container{
+ width: 100%;
+ padding: 1rem 0rem;
+  @media only screen and (min-width: 769px){
+       height: 100vh;
+  }
+
+  .cover-projects{
+   width: 96%;
+   padding: 1rem .4rem;
+   @media only screen and (min-width: 426px){
+    width: 90%;
+    margin: .2rem auto;
+   }
+   @media only screen and (min-width: 769px){
+       width: 80%;
+       margin: 1rem auto;
+       padding: 1rem 2rem;
+   }
+
+   .title{
+    width: 100%;
+    margin: .1rem auto;
+    .maintitle{
+     font-size: 1.6rem;
+     color: orangered;
+     text-align: center;
+     padding: .2rem .1rem;
+     @media only screen and (min-width: 426px){
+      font-size: 2rem;
+     }
+    }
+   }
+
+   .projectcontainer{
+    width: 100%;
+    @media only screen and (min-width: 426px){
+    display: flex;
+    padding-top: 2rem;
+    }
+    @media only screen and (min-width: 769px){
+      height: 80vh;
+    }
+
+    .finals{
+     width: 100%;
+     @media only screen and (min-width: 426px){
+      width: 400px;
+     }
+     @media only screen and (min-width: 769px){
+      width: 100%;
+     }
+
+     &__protitle{
+      width: inherit;
+      margin: .4rem 1rem;
+      h1{
+       font-size: 1.2rem;
+       font-weight: 600;
+       padding-bottom: .6rem;
+      }
+     }
+
+     &__display-cnt{
+      width: inherit;
+     }
+
+     &__contents{
+      width: 100%;
+     }
+
+     &__navigators{
+      width: 94%;
+      margin: .1rem auto;
+      padding: .4rem .1rem;
+      display: flex;
+      align-items: center;
+      overflow-x: scroll;
+      &::-webkit-scrollbar{
+       width: 0;
+      }
+
+      a{
+       padding: .4rem 1rem;
+       border-radius: 3px;
+       outline: 1px solid rgb(203, 200, 200);
+       margin-left: 1rem;
+       background: transparent;
+       color: rgb(18, 17, 17);
+      }
+     }
+
+     &__showcards{
+      width: 96%;
+      margin: .1rem auto;
+      padding: .4rem .6rem;
+      @media only screen and (min-width: 426px){
+       width: 100%;
+       height: 350px;
+       overflow-y: scroll;
+      }
+      @media only screen and (min-width: 769px){
+       &::-webkit-scrollbar{
+         display: none;
+       }
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       height: 60vh;
+      }
+     }
+
+     &__card{
+      width: 280px;
+      max-width: 280px;
+      height: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      margin: .5rem auto;
+      @media only screen and (min-width: 769px){
+       width: 250px;
+       height: 270px;
+      }
+
+      .front{
+       width: 100%;
+       height: 100%;
+       img{
+        width: 100%;
+        height: 100%;
+       }
+      }
+
+      .back{
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       top: 0;
+       padding: 1rem 1rem;
+       background: rgba(0, 0, 0, .6);
+
+       .text{
+        width: 100%;
+        margin: 1rem auto;
+        p{
+         color: white;
+         font-weight: 600;
+        }
+       }
+       p{
+        line-height: 1.5rem;
+        word-spacing: .1rem;
+        font-size: 1rem;
+        color: white;
+        display: flex;
+       }
+
+       a{
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+
+        p{
+         font-weight: 600;
+        }
+        span{
+         margin-left: .8rem;
+         i{
+          margin-left: .1rem;
+          color: rgb(29, 29, 247);
+         }
+        }
+       }
+      }
+     }
+    }
+
+    .prototype{
+     width: 100%;
+     padding: .1rem .2rem;
+     @media only screen and (min-width: 769px){
+      width: 300px;
+     }
+
+     &__protitle{
+      width: inherit;
+      margin: .4rem 1rem;
+      h1{
+       font-size: 1.2rem;
+       font-weight: 600;
+       padding-bottom: .6rem;
+      }
+     }
+
+     .prototypeimage{
+      width: 100%;
+
+      .contents{
+       width: 280px;
+       max-width: 280px;
+       height: 300px;
+       overflow: hidden;
+       border-radius: 10px;
+       position: relative;
+       margin: .2rem auto;
+       @media only screen and (min-width: 769px){
+        margin-top: 3rem;
+       }
+       img{
+        width: 100%;
+        height: 100%;
+       }
+       .category{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        padding: 1rem 1rem;
+        background: rgba(0, 0, 0, .6);
+
+        h1{
+         font-size: 1.2rem;
+         font-weight: 600;
+         padding: 1rem .2rem;
+         color: white;
+        }
+        p{
+         line-height: 1.5rem;
+         color: white;
+         font-size: 1rem;
+         word-spacing: .2rem;
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+}

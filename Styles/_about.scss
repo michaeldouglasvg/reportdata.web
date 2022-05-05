@@ -1,4 +1,172 @@
 .skills-container{
   width: 100%;
-  
+  padding: 1rem 0rem;
+  @media only screen and (min-width: 769px){
+       height: 100vh;
+  }
+  .cover-about{
+    width: 96%;
+    padding: 1rem .4rem;
+    @media only screen and (min-width: 426px){
+     width: 90%;
+     margin: 1rem auto;
+    }
+    @media only screen and (min-width: 769px){
+        width: 80%;
+        margin: 1.5rem auto;
+        padding: 1rem 2rem;
+    }
+
+    .title{
+      width: 100%;
+      margin: .2rem auto;
+      h1{
+       font-size: 1.6rem;
+       color: orangered;
+       text-align: center;
+       padding: .2rem .1rem;
+       @media only screen and (min-width: 426px){
+        font-size: 2rem;
+       }
+      }
+    }
+
+    .about-display{
+     width: 100%;
+     @media only screen and (min-width: 426px){
+        display: flex;
+        margin: 1rem auto;
+     }
+
+     .aboutleft{
+      width: 100%;
+      padding: .2rem .2rem;
+      @media only screen and (min-width: 769px){
+        width: 400px;
+      }
+
+      &__top{
+       width: 96%;
+       margin: .1rem auto;
+       p{
+        font-size: .9rem;
+        text-align: center;
+        word-spacing: .1rem;
+        color: rgb(75, 74, 74);
+        line-height: 1.5rem;
+       }
+      }
+
+      &__imageslide{
+       width: 280px;
+       max-width: 280px;
+       margin: .4rem auto;
+       height: 300px;
+       overflow: hidden;
+       border-radius: 5px;
+       img{
+        width: 100%;
+        height: 100%;
+       }
+      }
+
+      &__sociolinks{
+       width: 280px;
+       max-width: 280px;
+       padding: .6rem .1rem;
+       .links{
+        width: 100%;
+        i{
+         font-size: 1.5rem;
+         margin-left: 1rem;
+        }
+       }
+      }
+     }
+
+     .aboutright{
+      width: 100%;
+      padding: .2rem .2rem;
+      @media only screen and (min-width: 769px){
+        margin-left: 3rem;
+        margin-top: -.4rem;
+      }
+
+      &__sm-title{
+       margin: .4rem auto;
+       p{
+        font-size: 1.2rem;
+        color: black;
+        padding: .4rem .2rem;
+        font-weight: 600;
+       }
+      }
+
+      &__workpage{
+       width: 100%;
+
+       .article{
+        width: inherit;
+
+        &__buttons{
+         width: 100%;
+         padding: .8rem .1rem;
+
+         .swiperbtns{
+          display: flex;
+          align-items: center;
+          width: 100%;
+          padding: .4rem 0rem;
+          overflow-x: scroll;
+          &::-webkit-scrollbar{
+           display: none;
+          }
+          .btn{
+           padding: .4rem .6rem;
+           text-align: center;
+           border: none;
+           outline: none;
+           border-radius: 3px;
+           margin-left: 1rem;
+           cursor: pointer;
+          }
+          .active{
+           background: orange;
+          }
+         }
+        }
+
+        &__containerdisplay{
+         width: 100%;
+         padding: .6rem .1rem;
+
+        }
+
+        &__display-sec{
+         width: 96%;
+         margin: .1rem auto;
+         display: none;
+
+         .heading{
+          width: 100%;
+          padding: .2rem auto;
+         }
+         p{
+          font-size: .9rem;
+          line-height: 1.5rem;
+          word-spacing: .1rem;
+          color: rgb(90, 90, 90);
+         }
+        }
+        .active{
+         display: block;
+         .heading{
+          color: orangered;
+         }
+        }
+       }
+      }
+     }
+    }
+  }
 }
