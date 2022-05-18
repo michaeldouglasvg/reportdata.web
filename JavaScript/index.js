@@ -1,5 +1,4 @@
-// filter js
-
+// About page js :::::: right container
 const aboutContainer = document.querySelector(".article");
 const aboutBtns = document.querySelectorAll(".btn");
 const contentAbout = document.querySelectorAll(".article__display-sec");
@@ -18,9 +17,7 @@ aboutContainer.addEventListener("click", (e) =>{
 
    // removing active class from all the articles
    contentAbout.forEach((content) => {
-
     content.classList.remove("active")
-
    });
 
    const currentMatchId = document.getElementById(currentId);
